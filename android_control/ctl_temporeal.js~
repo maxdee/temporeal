@@ -59,13 +59,22 @@ constants = [
 pages = [
 /********** PAGE 1 *************/
 [
-    {
-        "name":"page1Label",
-        "type":"Label",
-        "value":"PAGE 1",
-        "size": "40",
-        "bounds": [0,0,1,.5]
-    }
+    { 
+	"name": "DAC",
+	"type": "Button",
+	"x": 0,
+	"y": 0,
+	"width": .1,
+	"height": .1,
+	"startingValue": 0,
+	"color": "#555555",
+	"stroke": "#aaaaaa",
+	"min": 0,
+	"max": 1,
+	"mode": "visualToggle",
+	"protocol": "OSC",
+	"address": "/dac,
+     }
 
 ],
 
