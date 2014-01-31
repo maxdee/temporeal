@@ -73,7 +73,7 @@ pages = [
 	"max": 1,
 	"mode": "visualToggle",
 	"protocol": "OSC",
-	"address": "/dac,
+	"address": "/dac",
      }
 
 ],
