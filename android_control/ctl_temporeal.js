@@ -9,7 +9,7 @@ constants = [
 {
     "name": "page1Btn",
     "type": "Button",
-    "bounds": [0,.85,.2,.05], 
+    "bounds": [0,.875,.2,.05], 
     "label": "1",
     "mode": "contact",    
     "ontouchstart": "control.changePage(0);",
@@ -18,7 +18,7 @@ constants = [
 {
     "name": "page2Btn",
     "type": "Button",
-    "bounds": [.2,.85,.2,.05], 
+    "bounds": [.2,.875,.2,.05], 
     "label": "2",
     "mode": "contact",    
     "ontouchstart": "control.changePage(1);",
@@ -27,7 +27,7 @@ constants = [
 {
     "name": "page3Btn",
     "type": "Button",
-    "bounds": [.4,.85,.2,.05], 
+    "bounds": [.4,.875,.2,.05], 
     "label": "3",
     "mode": "contact",
     "ontouchstart": "control.changePage(2);",
@@ -36,7 +36,7 @@ constants = [
 {
     "name": "refresh",
     "type": "Button",
-    "bounds": [.6, .85, .2, .05],
+    "bounds": [.6, .875, .2, .05],
     "startingValue": 0,
     "isLocal": true,
     "mode": "contact",
@@ -47,7 +47,7 @@ constants = [
 {
     "name": "tabButton",
     "type": "Button",
-    "bounds": [.85, .85, .2, .05],
+    "bounds": [.8, .875, .2, .05],
     "mode": "toggle",
     "stroke": "#aaa",
     "isLocal": true,
@@ -59,13 +59,22 @@ constants = [
 pages = [
 /********** PAGE 1 *************/
 [
-    {
-        "name":"page1Label",
-        "type":"Label",
-        "value":"PAGE 1",
-        "size": "40",
-        "bounds": [0,0,1,.5]
-    }
+    { 
+    "name": "DAC",
+    "type": "Button",
+    "x": 0,
+    "y": 0,
+    "width": .1,
+    "height": .1,
+    "startingValue": 0,
+    "color": "#555555",
+    "stroke": "#aaaaaa",
+    "min": 0,
+    "max": 1,
+    "mode": "visualToggle",
+    "protocol": "OSC",
+    "address": "/dac,
+     }
 
 ],
 
