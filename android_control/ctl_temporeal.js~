@@ -6,7 +6,7 @@ pages = [[
 {
     "name": "refresh",
     "type": "Button",
-    "bounds": [.6, .9, .2, .1],
+    "bounds": [.6, .5, .1, .75],
     "startingValue": 0,
     "isLocal": true,
     "mode": "contact",
@@ -17,7 +17,7 @@ pages = [[
 {
     "name": "tabButton",
     "type": "Button",
-    "bounds": [.8, .9, .2, .1],
+    "bounds": [.8, .5, .1, .75],
     "mode": "toggle",
     "stroke": "#aaa",
     "isLocal": true,
