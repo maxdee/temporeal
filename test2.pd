@@ -1,4 +1,4 @@
-#N canvas 529 103 821 913 10;
+#N canvas 529 1103 791 460 10;
 #X obj 298 156 square_wave;
 #X obj 421 -40 notein;
 #X obj 421 -11 pack f f f;
@@ -6,17 +6,17 @@
 #X obj 541 13 pack f f f;
 #X obj 541 -16 ctlin;
 #X obj 541 36 s ctls;
-#X obj 125 72 s freqwide;
-#X floatatom 125 40 5 0 0 0 - - -;
+#X obj 107 168 s freqwide;
+#X floatatom 107 136 5 0 0 0 - - -;
 #X obj 298 53 r freqwide;
 #X obj 298 108 *;
 #X obj 366 54 t b f;
 #X obj 298 86 f;
 #X obj 366 33 - 35;
 #X obj 366 12 moses 39;
-#X obj 648 41 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+#X obj 653 49 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X obj 648 63 s phase;
+#X obj 653 71 s phase;
 #X obj 421 57 route 39;
 #X obj 401 109 t b;
 #X obj 240 87 loadbang;
@@ -33,19 +33,14 @@
 #X obj 34 59 / 3;
 #X obj 32 88 + 10;
 #X obj 225 -26 ctlin 6 1;
-#X obj 643 265 ctlin 8 1;
-#X obj 643 287 / 127;
 #X msg 182 41 30;
 #X msg 149 -11 24;
 #X msg 354 108 0;
-#X obj 643 309 s gain;
-#X obj 124 629 daque;
-#X obj 124 545 subctl 1;
-#X obj 180 545 subctl 2;
-#X obj 236 545 subctl 3;
-#X obj 292 545 subctl 4;
-#X obj 297 183 s~ strobe;
-#X connect 0 0 43 0;
+#X obj 52 360 daque;
+#X obj 52 264 subctl 1;
+#X obj 267 264 subctl 4;
+#X obj 124 264 subctl 2;
+#X obj 196 264 subctl 3;
 #X connect 1 0 2 0;
 #X connect 1 0 14 0;
 #X connect 1 1 2 1;
@@ -79,8 +74,6 @@
 #X connect 29 0 30 0;
 #X connect 30 0 8 0;
 #X connect 31 0 25 0;
-#X connect 32 0 33 0;
-#X connect 33 0 37 0;
-#X connect 34 0 8 0;
-#X connect 35 0 8 0;
-#X connect 36 0 0 0;
+#X connect 32 0 8 0;
+#X connect 33 0 8 0;
+#X connect 34 0 0 0;

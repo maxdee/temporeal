@@ -1,4 +1,4 @@
-#N canvas 720 1103 489 345 10;
+#N canvas 713 1103 489 667 10;
 #X obj 167 47 dac~ 1 2 3 4 5 6 7 8;
 #X obj 299 -7 r~ speaker-1;
 #X obj 298 16 *~;
@@ -9,10 +9,10 @@
 #X obj 152 15 *~;
 #X obj 183 -8 r~ speaker-4;
 #X obj 153 -29 r~ speaker-3;
-#X obj 168 -115 r gain;
+#X obj 168 -157 r gain;
 #X msg 168 -94 \$1 20;
 #X obj 168 -73 vline~;
-#X obj 107 114 tgl 15 0 empty empty DSP 17 7 0 10 -262144 -1 -1 0 1
+#X obj 107 114 tgl 15 0 empty empty DSP 17 7 0 10 -262144 -1 -1 1 1
 ;
 #X msg 107 147 \; pd dsp \$1;
 #X obj 151 66 unsig~;
@@ -27,8 +27,11 @@
 #X obj 330 66 unsig~;
 #X floatatom 330 118 5 0 0 0 - - -;
 #X text 324 99 <LEDS>;
-#X obj 57 25 loadbang;
+#X obj 57 -52 loadbang;
 #X msg 57 47 1;
+#X obj 168 -136 min 1;
+#X obj 168 -115 max 0;
+#X msg 112 -90 1 10000;
 #X connect 1 0 2 0;
 #X connect 2 0 0 7;
 #X connect 2 0 21 0;
@@ -43,7 +46,7 @@
 #X connect 7 0 15 0;
 #X connect 8 0 6 0;
 #X connect 9 0 7 0;
-#X connect 10 0 11 0;
+#X connect 10 0 29 0;
 #X connect 11 0 12 0;
 #X connect 12 0 2 1;
 #X connect 12 0 3 1;
@@ -56,5 +59,9 @@
 #X connect 21 0 22 0;
 #X connect 24 0 25 0;
 #X connect 27 0 28 0;
+#X connect 27 0 31 0;
 #X connect 28 0 13 0;
+#X connect 29 0 30 0;
+#X connect 30 0 11 0;
+#X connect 31 0 12 0;
 #X coords 0 -1 1 1 270 40 1 100 100;
