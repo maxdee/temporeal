@@ -1,0 +1,15 @@
+#N canvas 556 171 450 300 10;
+#X declare -lib mrpeach;
+#X obj 3 3 import mrpeach;
+#X obj 3 24 udpreceive 8806;
+#X obj 3 45 unpackOSC;
+#X obj 167 105 print;
+#X obj 3 66 s osc;
+#X obj 113 92 spigot;
+#X obj 170 35 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X connect 1 0 2 0;
+#X connect 2 0 4 0;
+#X connect 2 0 5 0;
+#X connect 5 0 3 0;
+#X connect 6 0 5 1;
