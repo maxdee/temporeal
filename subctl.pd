@@ -1,4 +1,4 @@
-#N canvas 284 1313 543 423 10;
+#N canvas 372 307 543 423 10;
 #X obj 104 254 osc~;
 #X obj 104 320 lop~ 100;
 #X floatatom 103 161 5 0 0 2 freq - -;
@@ -23,8 +23,8 @@
 #X obj 127 117 bng 10 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 234 110 any;
-#X obj 142 119 vsl 10 55 0 127 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 32 1;
+#X obj 142 119 vsl 10 55 0 1 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 4050 1;
 #X obj 142 46 r gain-\$1;
 #X obj 254 188 loadbang;
 #X msg 254 214 0.75;
@@ -37,6 +37,7 @@
 #X obj 104 233 +~;
 #X msg 6 140 1 \, 0 2000;
 #X obj 368 82 r bump-\$1;
+#X obj -25 161 r subump;
 #X connect 0 0 10 0;
 #X connect 1 0 3 0;
 #X connect 2 0 8 0;
@@ -68,4 +69,5 @@
 #X connect 32 0 33 1;
 #X connect 33 0 0 0;
 #X connect 34 0 32 0;
+#X connect 36 0 32 0;
 #X coords 0 -1 1 1 55 80 1 100 100;
